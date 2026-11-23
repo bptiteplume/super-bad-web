@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <base href="/super-bad-web/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="SUPER BAD - Jeu de badminton arcade rétro jouable sur navigateur Web et en ligne !">
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="SUPER BAD">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>SUPER BAD • Badminton Arcade En Ligne</title>
+  <link rel="manifest" href="manifest.json">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: radial-gradient(circle at center, #280a48 0%, #090315 100%);
+      color: #ffea00;
+      font-family: monospace;
+    }
+    #sb-loader {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      z-index: 9999;
+    }
+    #sb-loader h1 {
+      margin: 0;
+      font-size: 42px;
+      font-style: italic;
+      letter-spacing: 5px;
+      text-shadow: 4px 4px 0 #ff006e;
+    }
+    #sb-loader p {
+      margin: 0;
+      color: #00e5ff;
+      font-size: 13px;
+      letter-spacing: 2px;
+    }
+  </style>
+</head>
+<body>
+  <div id="sb-loader">
+    <h1>SUPER BAD</h1>
+    <p>CHARGEMENT DE LA BORNE ARCADE WEB...</p>
+  </div>
+  <script>
+    window.addEventListener('flutter-first-frame', function () {
+      var el = document.getElementById('sb-loader');
+      if (el) el.remove();
+    });
+  </script>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>

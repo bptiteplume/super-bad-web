@@ -1,0 +1,35 @@
+{
+    "name": "SUPER BAD - Badminton Arcade En Ligne",
+    "short_name": "SUPER BAD",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#090315",
+    "theme_color": "#280A48",
+    "description": "Jeu de badminton arcade rétro jouable sur navigateur Web et en ligne.",
+    "orientation": "landscape",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
